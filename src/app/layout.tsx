@@ -7,9 +7,9 @@ import type { Metadata } from "next";
 
 const metadataHead = {
   title:
-    "Foundation UI - Headless Design System Platform for Modern Product Teams",
+    "Foundation UI - SVGJSX - Command-Line Interface for Building Scalable Icon Libraries",
   description:
-    "An open source Headless Design System Platform to help create Design System and Applications.",
+    "An Open Source Command Line Interfaces to generate JSX Icon Components from SVGs.",
 };
 export const metadata: Metadata = {
   ...metadataHead,
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: "https://www.usefui.dev.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "usefui.dev Banner",
+        alt: "svgjsx.dev Banner",
       },
     ],
     locale: "en_US",
