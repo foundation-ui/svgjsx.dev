@@ -21,24 +21,8 @@ const FixedNavigation = styled.nav`
   background-color: var(--body-color);
   padding: var(--measurement-medium-30);
 `;
-const DesktopNavigation = styled.div`
-  @media (max-width: 768px) {
-    display: none !important;
-  }
-`;
 
 function WebNavigation() {
-  const LINKS = [
-    {
-      link: "/docs/examples",
-      label: "Examples",
-    },
-    {
-      link: "/docs/Libraries",
-      label: "Libraries",
-    },
-  ];
-
   return (
     <FixedNavigation
       className="flex justify-between align-center"
@@ -58,38 +42,28 @@ function WebNavigation() {
         <AppLink as={Link} className="fs-medium-10" href="/docs/introduction">
           Docs
         </AppLink>
-        <DesktopNavigation className="flex align-center g-small-30">
-          <span className="opacity-default-10">|</span>
-
-          {LINKS.map((link, key) => (
-            <AppLink
-              as={Link}
-              key={key}
-              className="fs-medium-10"
-              href={link.link}
-            >
-              {link.label}
-            </AppLink>
-          ))}
-        </DesktopNavigation>
+        <span className="opacity-default-10">|</span>
+        <AppLink as={Link} className="fs-medium-10" href="/docs/examples">
+          Examples
+        </AppLink>
       </div>
 
-      <div className="flex align-center g-medium-60">
-        <Button
-          variant="ghost"
-          onClick={() =>
-            window.open(
-              "https://github.com/foundation-ui/svgjsx",
-              "_blank",
-              "noopener,noreferrer",
-            )
-          }
-        >
-          <Icon viewBox="0 0 14 14">
-            <SocialIcon.Github />
-          </Icon>
-        </Button>
-      </div>
+      <Button
+        variant="border"
+        sizing="large"
+        onClick={() =>
+          window.open(
+            "https://github.com/foundation-ui/svgjsx",
+            "_blank",
+            "noopener,noreferrer",
+          )
+        }
+      >
+        Github
+        <Icon viewBox="0 0 14 14">
+          <SocialIcon.Github />
+        </Icon>
+      </Button>
     </FixedNavigation>
   );
 }
