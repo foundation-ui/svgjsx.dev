@@ -17,7 +17,7 @@ function AppNavigation() {
           variant="ghost"
           onClick={() =>
             window.open(
-              "https://github.com/foundation-ui",
+              "https://github.com/foundation-ui/svgjsx",
               "_blank",
               "noopener,noreferrer",
             )

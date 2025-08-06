@@ -30,10 +30,7 @@ function Footer() {
         <span className="opacity-default-60">
           &nbsp;The source code is available on&nbsp;
         </span>
-        <a
-          target="_blank"
-          href="https://github.com/foundation-ui/design-system"
-        >
+        <a target="_blank" href="https://github.com/foundation-ui/svgjsx">
           Github
         </a>
         .
