@@ -3,9 +3,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Button } from "@foundation-ui/components";
+import { Button } from "@usefui/components";
 import { DisplaySmall, DisplayXxl } from "@/components";
-import { Icon, PixelIcon } from "@foundation-ui/icons";
+import { Icon, PixelIcon } from "@usefui/icons";
 
 const Header = styled.hgroup`
   display: flex;

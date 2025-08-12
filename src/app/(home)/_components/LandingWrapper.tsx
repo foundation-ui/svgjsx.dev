@@ -1,7 +1,7 @@
 "use client";
 
 import styled from "styled-components";
-import { Page } from "@foundation-ui/components";
+import { Page } from "@usefui/components";
 
 export const LandingWrapper = styled(Page.Content)`
   display: flex;

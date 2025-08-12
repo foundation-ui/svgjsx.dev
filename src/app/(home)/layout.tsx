@@ -1,6 +1,6 @@
 "use client";
 
-import { Page } from "@foundation-ui/components";
+import { Page } from "@usefui/components";
 import { LandingWrapper } from "./_components/LandingWrapper";
 
 function layout({

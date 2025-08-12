@@ -3,7 +3,7 @@
 import React from "react";
 import { usePathname, useRouter } from "next/navigation";
 
-import { Toolbar } from "@foundation-ui/components";
+import { Toolbar } from "@usefui/components";
 import { AppLink } from "@/components";
 
 import { COMMON_LINKS } from "../_routes";
