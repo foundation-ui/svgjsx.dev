@@ -16,9 +16,9 @@ const FixedNavigation = styled.nav`
 
   width: 100%;
   margin: 0 auto;
-  border: var(--measurement-small-30) solid transparent;
+  border: var(--measurement-small-30) solid transparent !important;
   border-bottom-color: var(--font-color-alpha-10);
-  background-color: var(--body-color);
+  background-color: transparent;
   padding: var(--measurement-medium-30);
 `;
 

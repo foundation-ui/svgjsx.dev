@@ -3,16 +3,19 @@
 import React from "react";
 
 import LandingHero from "./_components/LandingHero";
-import { Footer, WebNavigation } from "@/components";
+import AnimatedHero from "./_components/AnimatedHero";
+
+import { WebNavigation } from "@/components";
 
 function LandingPage() {
   return (
-    <React.Fragment>
+    <div className="h-100 w-100" style={{ position: "relative" }}>
       <WebNavigation />
 
       <LandingHero />
-      <Footer />
-    </React.Fragment>
+      <AnimatedHero chars="svgjsx" />
+      {/* <Footer /> */}
+    </div>
   );
 }
 

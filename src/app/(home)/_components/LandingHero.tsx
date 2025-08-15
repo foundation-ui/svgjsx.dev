@@ -3,9 +3,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Button } from "@usefui/components";
+import CommandTrigger from "./CommandTrigger";
 import { DisplaySmall, DisplayXxl } from "@/components";
-import { Icon, PixelIcon } from "@usefui/icons";
 
 const Header = styled.hgroup`
   display: flex;
@@ -19,21 +18,8 @@ const HeroDescWrapper = styled.div`
 `;
 
 function LandingHero() {
-  const [copied, setCopied] = React.useState(false);
-
-  const copyToClipboard = async (value: string) => {
-    if (!value) return;
-
-    await navigator.clipboard.writeText(value).then(() => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1000);
-    });
-
-    clearTimeout(1000);
-  };
-
   return (
-    <Header className="p-x-medium-60 justify-center m-y-large-30">
+    <Header className="p-x-medium-60 justify-center p-y-large-60">
       <DisplayXxl className="m-b-medium-30">
         Command-Line Interface for Building Scalable Icon Libraries
       </DisplayXxl>
@@ -52,16 +38,7 @@ function LandingHero() {
           </span>
         </DisplaySmall>
       </HeroDescWrapper>
-      <Button
-        variant="primary"
-        sizing="large"
-        onClick={() => copyToClipboard("npx @usefui/svgjsx generate")}
-      >
-        npx @usefui/svgjsx generate
-        <Icon fill="var(--body-color)">
-          {copied ? <PixelIcon.Check /> : <PixelIcon.Duplicate />}
-        </Icon>
-      </Button>
+      <CommandTrigger />
     </Header>
   );
 }
