@@ -6,7 +6,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ColorModeProvider, js_design_tokens } from "@usefui/tokens";
 
 import {
-  generateAlpha,
   generateCSSVariables,
   generateDimensionClasses,
   generateFontSizesClasses,
@@ -29,45 +28,7 @@ const cssOpacityClasses = generateOpacityClasses(design_tokens.opacity);
 const cssVariables = generateCSSVariables({
   name: js_design_tokens.name,
   design_tokens: {
-    color: [
-      ...design_tokens.color,
-
-      {
-        name: "mono-dark",
-        base: { hex: "#212121" },
-        alpha: generateAlpha("#212121"),
-        tint: [],
-        shade: [],
-      },
-      {
-        name: "mono-darker",
-        base: { hex: "#212121" },
-        alpha: generateAlpha("#212121"),
-        tint: [],
-        shade: [],
-      },
-      {
-        name: "mono-darkest",
-        base: { hex: "#111111" },
-        alpha: generateAlpha("#111111"),
-        tint: [],
-        shade: [],
-      },
-      {
-        name: "mono-white",
-        base: { hex: "#F1F1F1" },
-        alpha: generateAlpha("#F1F1F1"),
-        tint: [],
-        shade: [],
-      },
-      {
-        name: "mono-light",
-        base: { hex: "#FAFAFA" },
-        alpha: generateAlpha("#FAFAFA"),
-        tint: [],
-        shade: [],
-      },
-    ],
+    color: [...design_tokens.color],
     measurement: [...design_tokens.measurement],
     fontsize: [...design_tokens.fontsize],
     opacity: [...design_tokens.opacity],

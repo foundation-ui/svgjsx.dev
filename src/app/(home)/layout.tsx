@@ -10,7 +10,9 @@ function layout({
 }>) {
   return (
     <Page className="h-100 w-100">
-      <LandingWrapper>{children}</LandingWrapper>
+      <LandingWrapper className="p-x-medium-30 p-b-medium-30">
+        {children}
+      </LandingWrapper>
     </Page>
   );
 }

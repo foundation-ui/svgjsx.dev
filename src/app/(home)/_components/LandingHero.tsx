@@ -4,7 +4,8 @@ import React from "react";
 import styled from "styled-components";
 
 import CommandTrigger from "./CommandTrigger";
-import { DisplaySmall, DisplayXxl } from "@/components";
+
+import { DisplayXxl } from "@/components";
 
 const Header = styled.hgroup`
   display: flex;
@@ -12,6 +13,7 @@ const Header = styled.hgroup`
   width: 100%;
   margin: 0 auto;
   max-width: var(--breakpoint-tablet-landscape);
+  text-align: center;
 `;
 const HeroDescWrapper = styled.div`
   max-width: var(--breakpoint-tablet);
@@ -19,12 +21,12 @@ const HeroDescWrapper = styled.div`
 
 function LandingHero() {
   return (
-    <Header className="p-x-medium-60 justify-center p-y-large-60">
+    <Header className="p-x-medium-60 h-100 justify-center align-center">
       <DisplayXxl className="m-b-medium-30">
-        Command-Line Interface for Building Scalable Icon Libraries
+        Build Scalable Icon Libraries
       </DisplayXxl>
       <HeroDescWrapper className="m-b-large-10">
-        <DisplaySmall as="p">
+        <p className="fs-medium-20">
           <span className="opacity-default-60">A powerful CLI to</span>
           &nbsp;convert, optimize, and bundle SVG files into ready-to-use JSX
           components.&nbsp;
@@ -36,7 +38,7 @@ function LandingHero() {
             yielding performant, type-safe, and tree-shakable components that
             grow with your project.
           </span>
-        </DisplaySmall>
+        </p>
       </HeroDescWrapper>
       <CommandTrigger />
     </Header>
