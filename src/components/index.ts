@@ -1,7 +1,5 @@
-export * from "./AppLink";
-export * from "./MaxWidthContainer";
-export * from "./Spinner";
-
+export { AppLink } from "./link";
+export { MaxWidthContainer } from "./container";
 export {
   DisplayXxl,
   DisplayXl,
@@ -9,13 +7,15 @@ export {
   DisplaySmall,
   TextMuted,
   TextLimiter,
-} from "./Text";
-export { Spinner } from "./Spinner";
+} from "./text";
 
-export { default as AppNavigation } from "./AppNavigation";
-export { default as WebNavigation } from "./WebNavigation";
-export { default as Footer } from "./Footer";
+export * from "./drag-box";
 
-export { default as CopyCode } from "./CopyCode";
-export { default as AppDropdown } from "./AppDropdown";
-export { default as Breadcrumbs } from "./Breadcrumbs";
+export { default as BrandIcon } from "./brand-icon";
+export { default as Navigation } from "./navigation/Navigation";
+export { default as LandingNavigation } from "./navigation/LandingNavigation";
+export { default as SplitText } from "./split-text";
+export { default as Terminal } from "./terminal";
+
+export { default as ColorModes } from "./color-mode";
+export { default as Footer } from "./footer";
