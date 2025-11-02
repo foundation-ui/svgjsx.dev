@@ -3,8 +3,7 @@
 import React from "react";
 import { usePathname, useRouter } from "next/navigation";
 
-import { Accordion, Divider, Toolbar, useSheet } from "@usefui/components";
-import { Icon, PixelIcon } from "@usefui/icons";
+import { Toolbar, useSheet } from "@usefui/components";
 import { AppLink } from "@/components";
 
 import { COMMON_LINKS } from "../_routes";

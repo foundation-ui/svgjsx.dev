@@ -50,15 +50,6 @@ const BackgroundContainer = styled(ScrollArea)`
     background-color: transparent !important;
   }
 `;
-const BackgroundOverlay = styled.div`
-  position: absolute;
-  z-index: 10;
-  user-select: none;
-  pointer-events: none;
-  background: linear-gradient(0deg, var(--body-color) 10%, transparent 100%);
-  height: 100%;
-  width: 100%;
-`;
 const Grid = styled.li`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(31%, 1fr));

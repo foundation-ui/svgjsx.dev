@@ -8,9 +8,8 @@ import { useRouter } from "next/navigation";
 
 import LandingHero from "./LandingHero";
 
-import { Badge, Button, CopyButton, DropdownMenu } from "@usefui/components";
+import { Button } from "@usefui/components";
 import { DisplayMd, SplitText } from "@/components";
-import { Icon, PixelIcon } from "@usefui/icons";
 
 const Header = styled(motion.hgroup)`
   width: 100%;
