@@ -16,6 +16,10 @@ export const COMMON_LINKS = [
     label: "Examples",
   },
   {
+    link: "/docs/performances",
+    label: "Performances",
+  },
+  {
     link: "https://discord.gg/yer3CgTTwD",
     external: true,
     label: "Join the community",
